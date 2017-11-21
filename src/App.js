@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Components
+import Image from './components/Image';
+import Input from './components/Input';
+
 class App extends Component {
-    getBox(number){
-      return(
-        <div className="App">
-          <p className="App-text">{"Hola soy la caja #".concat(number) }</p>
-        </div>
-      );
-    }
+
+  constructor(){
+    super();
+  }
   render(){
     return(
       <div>
-        {this.getBox(1)}
-        {this.getBox(2)}
+        <Image/>
+        <Input/>
       </div>
     )
   }
