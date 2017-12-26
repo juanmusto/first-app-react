@@ -5,10 +5,18 @@ class Input extends Component {
   render(){
     return(
     <div>
-
+        <input
+            type={this.props.type}
+            id={this.props.id}
+        />
     </div>
     );
   }
+}
+
+Input.PropTypes = {
+    id: PropTypes.number.isRequired,
+    type: PropTypes.string.isRequired
 }
 
 // Input.propTypes
